@@ -1,0 +1,56 @@
+/* Additional custom styles */
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+/* In your CSS file */
+p, li {
+    font-family: 'Crimson Text', serif;
+}
+
+/* In your CSS file */
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Pacifico', cursive;
+}
+
+/* Custom CSS for additional styling in student_details.html*/
+.custom-card {
+    background-color: #eaeaea; /* Light gray background */
+    border-radius: 15px;
+    box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.2); /* Slightly raised card with a soft shadow */
+    padding: 20px;
+}
+
+.custom-card-title {
+    font-size: 28px;
+    color: #343a40; /* Dark text color */
+    text-align: center;
+    margin-bottom: 15px; /* Added some spacing below the title */
+}
+
+.custom-card-text {
+    font-size: 18px;
+    color: #6c757d; /* Slightly muted text color */
+    margin-bottom: 10px; /* Added some spacing below the text */
+}
+
+.custom-card-footer {
+    background-color: #343a40;
+    color: #ffffff;
+    text-align: center;
+    padding: 10px 0;
+    border-bottom-left-radius: 15px; /* Rounded corners for the footer */
+    border-bottom-right-radius: 15px;
+}
+
+/* Custom styles for the image */
+.custom-image {
+    width: 300px;
+    height: 300px;
+    display: block;
+    margin: 0 auto;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 5px solid #ffffff; /* White border around the image */
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2); /* Slight shadow for the image */
+}

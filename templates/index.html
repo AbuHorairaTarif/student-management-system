@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/static/style.css">
+
+    <title>Student Records</title>
+</head>
+<body>
+    <div class="container">
+        <h1 class="mt-5 text-center text-primary">Student Database</h1>
+
+        {{ if .StudentAdded }}
+        <div class="alert alert-success mt-3">
+            Student information is added successfully.
+        </div>
+        {{ end }}
+
+        {{ if .StudentDeleted }}
+        <div class="alert alert-danger mt-3">
+            Student information is deleted successfully.
+        </div>
+{{ end }}
+
+        <div class="mt-5">
+            <h2 class="text-center text-warning">Add Student</h2>
+            <form action="/add" method="post" enctype="multipart/form-data">
+                <div class="form-group">
+                    <label for="name">Name:</label>
+                    <input type="text" class="form-control" id="name" name="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="cgpa">CGPA:</label>
+                    <input type="number" class="form-control" id="cgpa" name="cgpa" step="0.01" required>
+                </div>
+                <div class="form-group">
+                    <label for="career_interest">Career Interest:</label>
+                    <input type="text" class="form-control" id="career_interest" name="career_interest" required>
+                </div>
+                <div class="form-group">
+                    <label for="image">Image:</label>
+                    <input type="file" class="form-control-file" id="image" name="image" accept="image/jpeg">
+                </div>
+                <button type="submit" class="btn btn-primary">Submit</button>
+            </form>
+        </div>
+
+        <div class="mt-5 text-center">
+            <a href="/all_students" class="btn btn-primary">Show All Students</a>
+        </div>
+
+        <div class="mt-5">
+            <h2 class="text-center text-success">Display Student Details by ID</h2>
+            <form action="/display" method="post">
+                <div class="form-group">
+                    <label for="display_id">Student ID:</label>
+                    <input type="number" class="form-control" id="display_id" name="display_id" required>
+                </div>
+                <button type="submit" class="btn btn-primary">Display</button>
+            </form>
+        </div>
+
+        <div class="mt-5 mb-4">
+            <h2 class="text-center text-danger">Delete Student by ID</h2>
+            <form action="/delete" method="post">
+                <div class="form-group">
+                    <label for="delete_id">Student ID:</label>
+                    <input type="number" class="form-control" id="delete_id" name="delete_id" required>
+                </div>
+                <button type="submit" class="btn btn-danger">Delete</button>
+            </form>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>

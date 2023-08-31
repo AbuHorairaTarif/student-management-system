@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/static/style.css">
+    <title>Student Details</title>
+    <style>
+        
+
+    </style>
+</head>
+<body>
+    <div class="container mt-5">
+        <div class="card custom-card">
+            <!-- Image displayed in the top center -->
+            
+            <div class=" custom-card-title text-warning">
+                Student Details
+            </div>
+            <div class="card-body text-center">
+                <img src="./{{.ImagePath}}" alt="Student Image" width="300" class="custom-image">
+                <h5 class="card-title mt-4">Student Name: {{.Name}}</h5>
+                <p class="custom-card-text">Student ID: {{.ID}}</p>
+                <p class="custom-card-text">CGPA: {{.CGPA}}</p>
+                <p class="custom-card-text">Career Interest: {{.CareerInterest}}</p>
+            </div>
+            
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>

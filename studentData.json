@@ -1,0 +1,23 @@
+{
+    "1": {
+        "Name": "Hasan",
+        "ID": 1,
+        "CGPA": 3.5,
+        "CareerInterest": "IT",
+        "ImagePath": "uploads/1.jpg"
+    },
+    "2": {
+        "Name": "Khalid",
+        "ID": 2,
+        "CGPA": 3.5,
+        "CareerInterest": "EEE",
+        "ImagePath": "uploads/2.jpg"
+    },
+    "3": {
+        "Name": "Kalam",
+        "ID": 3,
+        "CGPA": 3.9,
+        "CareerInterest": "Business",
+        "ImagePath": "uploads/3.jpg"
+    }
+}
